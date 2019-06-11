@@ -1,0 +1,4 @@
+#/bin/bash
+mpic++ $1.cpp -o $1
+srun -n $2 -p ddr $1 ${@:3}
+

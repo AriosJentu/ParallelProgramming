@@ -1,0 +1,4 @@
+#/bin/bash
+mpic++ $1.cpp -o $1
+mpiexec -n $2 $1 ${@:3}
+
